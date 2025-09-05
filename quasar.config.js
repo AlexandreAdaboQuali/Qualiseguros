@@ -59,6 +59,15 @@ export default defineConfig((/* ctx */) => {
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
       
+      // Garantir que os estilos sejam aplicados corretamente em produção
+      css: {
+        preprocessorOptions: {
+          scss: {
+            additionalData: `@import "src/css/quasar.variables.scss";`
+          }
+        }
+      },
+      
       vitePlugins: [
         ['vite-plugin-checker', {
           eslint: {

@@ -6,7 +6,14 @@
         alt="Background Qualiseguros"
         style="height: auto; width: auto; max-width: 100%; max-height: 100%"
       />
-      <q-dialog persistent v-model="popRedirect" content-class="my-image-dialog">
+      <q-dialog 
+        persistent 
+        v-model="popRedirect" 
+        content-class="my-image-dialog"
+        :maximized="false"
+        :full-width="false"
+        :full-height="false"
+      >
         <q-card class="my-image-card">
           <q-card-section class="row items-center justify-between q-pb-none dialog-header">
             <div class="col-auto row items-center">
@@ -79,16 +86,24 @@ function goToMdsSite() {
 
 /* Estilos para o dialog da imagem */
 .my-image-dialog {
-  max-width: 95vw;
-  width: 800px;
-  max-height: 95vh;
-  height: auto;
-  border-radius: 16px;
-  overflow: hidden;
+  max-width: 95vw !important;
+  width: 800px !important;
+  max-height: 95vh !important;
+  height: auto !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  margin: 0 auto !important;
+  position: relative !important;
 }
 
 /* Responsividade para mobile */
 @media (max-width: 768px) {
+  .my-image-dialog {
+    max-width: 95vw !important;
+    width: 95vw !important;
+    margin: 2.5vw !important;
+  }
+
   .dialog-header {
     padding: 12px 16px;
     flex-direction: column;
@@ -120,6 +135,12 @@ function goToMdsSite() {
 
 /* Estilos para desktop - alinhamento à direita */
 @media (min-width: 769px) {
+  .my-image-dialog {
+    max-width: 800px !important;
+    width: 800px !important;
+    margin: 0 auto !important;
+  }
+
   .dialog-footer {
     display: flex;
     justify-content: flex-end;
