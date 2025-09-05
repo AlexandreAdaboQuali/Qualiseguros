@@ -1,6 +1,11 @@
 <template>
   <div>
     <q-page class="flex flex-center">
+      <img
+        src="~assets/background-qualiseguros.png"
+        alt="Background Qualiseguros"
+        style="height: auto; width: auto; max-width: 100%; max-height: 100%"
+      />
       <q-dialog persistent v-model="popRedirect" content-class="my-image-dialog">
         <q-card class="my-image-card">
           <q-card-section class="row items-center justify-between q-pb-none dialog-header">
