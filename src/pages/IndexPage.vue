@@ -110,7 +110,7 @@ function goToMdsSite() {
   }
 
   .dialog-text-content {
-    padding: 16px;
+    padding: 10px 12px;
     font-size: 12px;
   }
 
@@ -163,14 +163,10 @@ function goToMdsSite() {
 }
 
 .dialog-text-content {
-  padding: 18px;
+  padding: 10px 12px;
   color: #1a1919;
   font-size: 14px;
   line-height: 1.4;
-}
-
-.dialog-text-content p {
-  margin-bottom: 1em;
 }
 
 .galano-font {
@@ -178,7 +174,7 @@ function goToMdsSite() {
 }
 
 .dialog-footer {
-  padding: 16px 24px;
+  padding: 12px 24px;
   background-color: white;
   border-top: 1px solid #eee;
 }
