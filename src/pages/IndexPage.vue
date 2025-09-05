@@ -79,9 +79,9 @@ function goToMdsSite() {
 
 /* Estilos para o dialog da imagem */
 .my-image-dialog {
-  max-width: 90vw;
+  max-width: 95vw;
   width: 800px;
-  max-height: 90vh;
+  max-height: 95vh;
   height: auto;
   border-radius: 16px;
   overflow: hidden;
@@ -89,11 +89,6 @@ function goToMdsSite() {
 
 /* Responsividade para mobile */
 @media (max-width: 768px) {
-  .my-image-dialog {
-    width: 95vw;
-    max-width: 95vw;
-  }
-
   .dialog-header {
     padding: 12px 16px;
     flex-direction: column;
