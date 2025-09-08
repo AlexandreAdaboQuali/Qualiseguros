@@ -105,10 +105,9 @@ function goToMdsSite() {
   }
 
   .dialog-header {
-    padding: 12px 16px;
-    flex-direction: column;
+    padding: 6px 12px;
     align-items: flex-start;
-    gap: 8px;
+    gap: 2px;
   }
 
   .dialog-header-text {
@@ -120,7 +119,7 @@ function goToMdsSite() {
   }
 
   .dialog-text-content {
-    padding: 10px 12px;
+    padding: 10px 12px 0px;
     font-size: 12px;
   }
 
@@ -158,7 +157,7 @@ function goToMdsSite() {
 }
 
 .dialog-header {
-  padding: 16px 24px;
+  padding: 6px 12px;
   background-color: white;
   border-bottom: 1px solid #eee;
 }
@@ -172,14 +171,14 @@ function goToMdsSite() {
 .dialog-image {
   width: calc(100% - 32px);
   height: auto;
-  max-height: 300px;
+  max-height: 225px;
   object-fit: cover;
-  margin: 16px;
+  margin: 16px 16px 2px;
   border-radius: 8px;
 }
 
 .dialog-text-content {
-  padding: 10px 12px;
+  padding: 10px 12px 0px;
   color: #1a1919;
   font-size: 14px;
   line-height: 1.4;
